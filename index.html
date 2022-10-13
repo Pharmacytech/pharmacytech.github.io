@@ -1,6 +1,17 @@
 <html>
   <head>
-  <meta charset="UTF-8">">
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MM3B1ZZL6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6MM3B1ZZL6');
+</script>
+
+  <meta charset="UTF-8">
   <meta name="keywords" content="World Pharmacy Technician Day, NCL Pharmacy Technicians">
   <meta name="author" content="Pani Sphikas">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +48,7 @@
   <div class="tile">
     <img src="https://user-images.githubusercontent.com/114748923/193297177-4acc5613-1768-4a68-9265-8690fc39170f.jpg" />
      <div class="overlay">
-       <div class="text" style ="padding-top:300px"> <b>CANDI Highgate Mental Health Centre</b><br> Neelam Sharma-  Chief Pharmacy Technician (CANDI) undertaking a drug history</p>
+       <div class="text" style ="padding-top:300px"> <b> Camden and Islington NHS Foundation Trust Highgate Mental Health Centre</b><br> Neelam Sharma-  Chief Pharmacy Technician undertaking a drug history</p>
         
     </div>
   </div>
@@ -45,7 +56,7 @@
   <div class="tile">
     <img src="https://user-images.githubusercontent.com/114748923/193312107-385c7aa5-c6ff-445f-b36a-e6e5ef7ba2b5.jpg" />
    <div class="overlay">
-    <div class="text" style ="padding-top:200px"> Alfredo Cherez-  Senior Pharmacy Technician (UCLH) delivering a public health campaign for vaccination</p>
+    <div class="text" style ="padding-top:200px"> <b>University College London Hospital</b><br> Alfredo Cherez-  Senior Pharmacy Technician delivering a public health campaign for vaccination</p>
     </div>
     </div>
   </div>
@@ -70,7 +81,10 @@
   <div class="tile">
     <img src="https://user-images.githubusercontent.com/114748923/195082187-570ffc06-0f53-4268-9793-cd9d45fbd6f6.JPG" />
      <div class="overlay">
-    <div hidden class="text" style ="padding-top:10px; background-color: grey">NCL Pharmacy Technician priorities</p>
+    <div class="text" style ="padding-top:10px;">
+      <p style = "color:black"> 
+      <button id="myBtn" class ="button5">Find out more</button>
+      </p>
         
     </div>
   </div>
@@ -108,6 +122,23 @@
 
 </div>
 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>North Central London (NCL) Pharmacy Technician Network</h2>
+    <h4>Pharmacy Technicians in NCL meet regularly as a Network to collaborate on agreed priorities for the local area and share resources and ideas. <br>
+      Some also represent the network in working groups within the ICS. <br>
+<br>
+If you work in NCL as a pharmacy technician in any sector and would like to join the network <br>please contact Emma   - emma.walker10@nhs.net or panayiotis.sphikas@nhs.net</h4>
+  </div>
+
+</div>
+
 </body>
 <footer>
   
@@ -137,6 +168,33 @@ window.onmousemove = e => {
     fill: "forwards",
     easing: "ease"
   })
+}
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
   </script>
 
@@ -315,4 +373,74 @@ img {
 .herotext{
  
   text-align: center;}
+  
+  .tag{
+  font-size:12px;
+  float: right;
+  color:grey;
+ 
+}
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 40% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+
+text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+
+.button5 {
+  background-color: #4CAF50; /* Green */
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
 </style>
